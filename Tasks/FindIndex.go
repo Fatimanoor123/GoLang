@@ -1,3 +1,5 @@
+
+//find index of element in slice
 package main
 
 import "fmt"
