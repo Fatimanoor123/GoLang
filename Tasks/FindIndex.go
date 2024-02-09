@@ -1,3 +1,5 @@
+//find maximum value of integer in slice
+
 package main
 
 import "fmt"
