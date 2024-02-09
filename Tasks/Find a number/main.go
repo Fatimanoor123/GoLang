@@ -1,20 +1,29 @@
-// find maximum value in slice
 package main
 
-import (
-	"fmt"
-	"sort"
-)
+import "fmt"
 
 func main() {
-	var a []int
-	a = append(a, 23)
-	a = append(a, 2)
-	a = append(a, 311)
-	a = append(a, 42)
-	a = append(a, 51)
-	fmt.Println("Values in slice are", a)
-	sort.Ints(a)
-	fmt.Println("the maximum value is: ", a[len(a)-1])
+	//var n int
+	var value int
+	var max int
+	var hasInput bool = false
 
+	fmt.Println("Enter numbers (type 0 to finish):")
+
+	for {
+		fmt.Scan(&value)
+		if value == 0 {
+			break
+		}
+		if !hasInput || value > max {
+			max = value
+			hasInput = true
+		}
+	}
+
+	if !hasInput {
+		fmt.Println("No numbers entered.")
+	} else {
+		fmt.Printf("The maximum value is: %d\n", max)
+	}
 }
