@@ -1,3 +1,4 @@
+// find maximum value in slice
 package main
 
 import (
