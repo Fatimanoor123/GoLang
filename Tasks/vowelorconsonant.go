@@ -1,3 +1,4 @@
+//find character is vowel of consonant
 package main
 
 import "fmt"
