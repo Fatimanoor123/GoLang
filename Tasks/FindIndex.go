@@ -1,5 +1,4 @@
-//find maximum value of integer in slice
-
+//find index of specific element in slice
 package main
 
 import "fmt"
