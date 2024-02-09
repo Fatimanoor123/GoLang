@@ -1,3 +1,6 @@
+//Question find sum of all integer of an array
+
+
 package main
 
 import "fmt"
